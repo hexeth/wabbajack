@@ -204,6 +204,15 @@ namespace Wabbajack
             await browser.NavigateTo(url);
             
             while (!cancel.IsCancellationRequested && !manuallyDownloadNexusFile.Task.IsCompleted) {
+                 await browser.EvaluateJavaScript($"Array.from(document.querySelectorAll('#slowDownloadButton')).forEach(e => {{e.click();}});");
+                }
+                await Task.Delay(250);
+                
+            }
+        }
+    }
+}
+
                 await Task.Delay(250);
             }
         }
