@@ -93,7 +93,8 @@ namespace Wabbajack.Common
         public static string ModlistMetadataURL = "https://raw.githubusercontent.com/wabbajack-tools/mod-lists/master/modlists.json";
         public static string UtilityModlistMetadataURL = "https://raw.githubusercontent.com/wabbajack-tools/mod-lists/master/utility_modlists.json";
         public static string UnlistedModlistMetadataURL = "https://raw.githubusercontent.com/wabbajack-tools/mod-lists/master/unlisted_modlists.json";
-        public static string ModlistSummaryURL = "https://build.wabbajack.org/lists/status.json";
+        public static string ModlistSummaryURL = "https://raw.githubusercontent.com/wabbajack-tools/mod-lists/master/reports/modListSummary.json";
+        public static string UpgradedFilesURL = "https://raw.githubusercontent.com/wabbajack-tools/mod-lists/master/reports/upgraded.json";
         public static string UserAgent
         {
             get
